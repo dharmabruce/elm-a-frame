@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Elm A-Frame Example</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+
+  <div id="elm-a-frame-div"></div>
+
+  <script src="Example.js"></script>
+  <script>
+    /* global Elm */
+    // get an empty <div>
+    var div = document.getElementById('elm-a-frame-div');
+
+    // embed our Elm program in that <div>
+    Elm.Main.embed(div);
+  </script>
